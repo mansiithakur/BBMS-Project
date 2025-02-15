@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saving Lives</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-top">
+                <div class="logo">
+                    <img src="images/logo3.png" alt="Saving Lives Logo">
+                    <div class="text-container">
+                        <div><span>S</span>aving</div>
+                        <div class="indented"><span>L</span>ives</div>
+                    </div>
+                </div>
+                <div class="mid">
+                    <nav class="nav1">
+                        <ul>
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#blog-section">Blogs</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#customer-reviews" style="white-space: nowrap;">Customer reviews</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navbar-buttons">
+                    <button class="btn" onclick="toggleLoginForm()">Login</button>
+                    <button id="contact-btn" class="btn">Contact Us</button>
+
+                </div>
+            </div>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide active  info-slide">
+                        <p id="head">"Your little effort can give someone a
+                            <span>Second chance</span> to live life!"
+                        </p>
+                        <img src="images/bgg.png" alt="Background Image">
+                    </div>
+                    
+                    <div class="slide slide1">
+                        <img src="images/image1.jpg" alt="Image 1">
+                    </div>
+                    <div class="slide slide1">
+                        <img src="images/image2.jpg" alt="Image 2">
+                    </div>
+                    <div class="slide slide1">
+                        <img src="images/image3.jpg" alt="Image 3">
+                    </div>
+                  
+                </div>
+                
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+            
+        </div>
+
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="about-container">
+                <div class="about-left">
+                    <h2 class="about-title">Our Mission: Saving Lives, One Drop at a Time</h2>
+                    <p class="about-intro">At the heart of our Blood Bank Management System is a deep commitment to
+                        saving lives. With cutting-edge technology, we bring together blood donors, hospitals, and
+                        healthcare providers to ensure a reliable, safe, and efficient blood supply for those in need.
+                    </p>
+                    <p class="about-details">We go beyond just tracking blood donations. We empower individuals and
+                        organizations to actively participate in the life-saving process through innovative features
+                        such as real-time donation tracking, emergency alerts, and detailed inventory management.</p>
+                    <div class="about-call-to-action">
+                        <p>Join us in revolutionizing the way we manage blood donations. Your contribution can make a
+                            difference. Together, we can ensure that blood shortages become a thing of the past.</p>
+                        <p><strong>Learn more about our mission and how you can help:</strong></p>
+                        <a href="more-info.html" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="about-image">
+                        <img src="images/blood-bank.jpg" />
+                    </div>
+                    <div class="about-impact">
+                        <h3>Our Impact</h3>
+                        <p>Since our inception, our system has helped provide thousands of pints of life-saving blood.
+                            By streamlining donation and tracking processes, we are able to reach communities in need
+                            more effectively.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog-section">
+            <div class="blog-header">
+                <h2>Learn About Donors, Receivers, and More</h2>
+                <p>Explore insights on blood donation, receivers' stories, and the impact of your contributions.</p>
+            </div>
+
+            <div class="blog-grid">
+
+                <div class="blog-card">
+                    <img src="images/donor.jpg" alt="Donor">
+                    <h3>Donor's Role in Saving Lives</h3>
+                    <p>Discover how blood donors are the unsung heroes of healthcare, saving millions of lives every
+                        year.</p>
+                </div>
+
+                <div class="blog-card">
+                    <img src="images/receiver.avif" alt="Receiver">
+                    <h3>Receivers: Stories of Hope</h3>
+                    <p>Read touching stories of individuals whose lives were transformed by timely blood donations.</p>
+                </div>
+
+
+                <div class="blog-card">
+                    <img src="images/blood_types.avif" alt="Blood Types">
+                    <h3>Understanding Blood Types</h3>
+                    <p>Learn why matching blood types is critical and how universal donors make a difference.</p>
+                </div>
+
+                <div class="blog-card">
+                    <img src="images/emergency.avif" alt="Emergency Donations">
+                    <h3>Emergency Blood Donations</h3>
+                    <p>Find out how quick response during emergencies saves countless lives and what you can do to help.
+                    </p>
+                </div>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <img src="images/img1.png" alt="Blood Donation">
+                <h3>Blood Donation</h3>
+                <p>We organize regular blood donation drives to bring donors closer to those in need. Every drop of
+                    blood donated is a step toward saving lives, bridging gaps in healthcare, and providing hope to
+                    patients facing life-threatening conditions. Our facilities ensure that donors feel safe and
+                    comfortable throughout the process, with trained professionals to assist every step of the way.Every
+                    drop of blood donated is a step toward saving lives, bridging gaps in healthcare, and providing hope
+                    to patients facing life-threatening conditions. Our facilities ensure that donors feel safe and
+                    comfortable throughout the process, with trained professionals to assist every step of the way.Join
+                    us and become a life-saver today.</p>
+            </div>
+            <div class="service">
+                <img src="images/img2.avif" alt="Blood Testing">
+                <h3>Blood Testing</h3>
+                <p>Our testing facilities use advanced technology to thoroughly screen all donated blood. This process
+                    involves detecting infectious diseases, confirming blood type compatibility, and ensuring the safety
+                    of both donors and recipients. Every sample undergoes rigorous checks, maintaining the highest
+                    standards of accuracy and quality. This meticulous attention to detail minimizes risks and ensures
+                    only safe blood is stored and distributed.</p>
+            </div>
+            <div class="service">
+                <img src="images/img3.jpg" alt="Blood Distribution">
+                <h3>Blood Distribution</h3>
+                <p>Our robust blood distribution network ensures timely delivery to hospitals, clinics, and emergency
+                    facilities. By leveraging technology and an organized logistics system, we guarantee that blood
+                    reaches where it is needed the most without delays. Emergencies don’t wait, and neither do we—our
+                    team works tirelessly to manage demand during critical times. We prioritize lives and ensure that no
+                    patient faces a shortage of blood when it is most needed.</p>
+            </div>
+            <div class="service">
+                <img src="images/img4.jpg" alt="Community Awareness">
+                <h3>Community Awareness</h3>
+                <p>We believe that education is the key to increasing blood donation awareness and participation.
+                    Through interactive workshops, awareness campaigns, and public seminars, we engage communities to
+                    understand the life-saving impact of regular blood donation.By fostering a sense of social
+                    responsibility, we encourage communities to come together
+                    and create a culture of giving. Every individual educated is a potential lifesaver, helping us move
+                    closer to a future free from blood shortages.</p>
+            </div>
+        </section>
+        <section id="customer-reviews">
+            <div class="reviews-container">
+                <h2>What Our Users Say</h2>
+
+                <div class="review">
+                    <img src="images/user1.jpg" alt="User 1">
+                    <div class="review-text">
+                        <blockquote>
+                            "This platform made it so easy to find a donor when I needed blood urgently. I'm forever
+                            grateful!"
+                        </blockquote>
+                        <p class="reviewer-name">- John Doe</p>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <img src="images/user2.jpg" alt="User 2">
+                    <div class="review-text">
+                        <blockquote>
+                            "Donating blood through this system was seamless. I received timely updates and felt valued
+                            as a donor."
+                        </blockquote>
+                        <p class="reviewer-name">- Sarah Williams</p>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <img src="images/user3.jpg" alt="User 3">
+                    <div class="review-text">
+                        <blockquote>
+                            "Thanks to this platform, my hospital can now manage blood inventory efficiently. A real
+                            lifesaver!"
+                        </blockquote>
+                        <p class="reviewer-name">- Dr. Emily Carter</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Blood Bank Donation System. All rights reserved.</p>
+    </footer>
+
+    <div id="overlay" class="overlay" onclick="hideAllModals()"></div>
+    <div id="login-modal" class="login-modal">
+        <a href="/" class="home-link" onclick="hideAllModals()">❌</a>
+        <div class="login-container">
+            <div class="login-card">
+                <img src="images/doctor.png" alt="Doctor Login">
+                <h2>Donor login</h2>
+                <p>Welcome to Saving Lives! Log in to manage your blood donations, track your history, and help save
+                    lives through our blood bank management system.</p>
+                <input class="input" type="text" placeholder="Username" required>
+                <input class="input" type="password" placeholder="Password" required>
+
+                <button class="btn" onclick="toggleLoginForm()">SIGN IN</button>
+
+                <div class="options">
+                    <label>
+                        <input type="checkbox"> Keep Me Signed in
+                    </label>
+                    <div class="links">
+                        <a href="#" onclick="toggleLoginForm(); togglePasswordForm();">Forgot your Password?</a>
+                        <a href="#" onclick="toggleLoginForm(); toggleAccountForm();">Create an Account</a>
+                    </div>
+                </div>
+            </div>
+            <div class="login-card">
+                <img src="images/patient.png" alt="Patient Login">
+                <h2>Reciever login</h2>
+                <p>Log in to access the blood bank services,request blood donations,track
+                    your healthcare need and helps you receive the blood quickly and
+                    efficiently.</p>
+
+                <input class="input" type="text" placeholder="Username" required>
+                <input class="input" type="password" placeholder="Password" required>
+                <button class="btn" onclick="toggleLoginForm()">SIGN IN</button>
+                <div class="options">
+                    <label>
+                        <input type="checkbox"> Keep Me Signed in
+                    </label>
+                    <div class="links">
+                        <a href="#" onclick="toggleLoginForm(); togglePasswordForm();">Forgot your Password?</a>
+                        <a href="#" onclick="toggleLoginForm(); toggleAccountForm();">Create an Account</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="account-modal" class="account-modal">
+        <h2>Create an Account</h2>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button class="btn" type="submit">Create Account</button>
+        </form>
+        <a href="javascript:void(0);" class="back-to-login" onclick="toggleAccountForm(); toggleLoginForm();">Back to
+            Login</a>
+    </div>
+
+    <div id="password-modal" class="password-modal">
+        <h2>Reset Your Password</h2>
+        <form>
+            <input type="email" placeholder="Email" required>
+            <button class="btn" type="submit">Reset Password</button>
+        </form>
+
+        <a href="javascript:void(0);" class="back-to-login" onclick="togglePasswordForm(); toggleLoginForm();">Back to
+            Login</a>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
